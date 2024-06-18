@@ -1,14 +1,14 @@
-.left-section {
-  width: 50%;
+.login-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100%; /* Full height of the container */
   padding: 20px;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
 }
 
-.navbar-login {
+.login-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -24,12 +24,18 @@
 .login-form {
   display: flex;
   flex-direction: column;
+  width: 75%;
+}
+
+.login-form .forgot-password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .input-container {
   display: flex;
   position: relative;
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -52,26 +58,51 @@
 .toggle-eye {
   position: absolute;
   right: 10px;
-  top: 40%;
+  top: 37%;
   transform: translateY(-50%);
   cursor: pointer;
   color: gray;
 }
 
-
-
 .login-form span {
   color: #f9f9f9;
 }
 
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .login-form .login-button {
   background-color: #1ab394;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 0px;
 }
 
 .login-form .login-e-government-button {
   background-color: #c41212;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 0px;
 }
 
 .login-form .sign-up-button {
   background-color: #1890ff;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 0px;
+}
+
+
+.signup-icon {
+  position:static;
+  margin-right: 5px;
+}
+
+.login-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

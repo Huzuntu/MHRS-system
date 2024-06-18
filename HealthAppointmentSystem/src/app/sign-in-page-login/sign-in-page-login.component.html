@@ -1,5 +1,5 @@
-<div class="left-section">
-    <div class="navbar-login">
+<div class="login-container">
+    <div class="login-header">
         <div class="img-columns">
             <img height="99px" width="100px" src="../../assets/img/tcHealth.png">
         </div>
@@ -15,8 +15,8 @@
         </div>
     </div>
 
-    <div>
-        <form class="login-form">
+    <div class="login-form">
+        <form>
             <div class="input-container">
                 <i class="fa-solid fa-user icon"></i>
                 <input type="text" id="email" name="email" placeholder="Email">
@@ -26,10 +26,24 @@
                 <input [type]="showPassword ? 'text' : 'password'" id="password" name="password" placeholder="Password">
                 <i class="fa toggle-eye" [ngClass]="{'fa-eye': showPassword, 'fa-eye-slash': !showPassword}" aria-hidden="true" (click)="togglePassword()"></i>
             </div>
-            <button class="login-button" type="submit"><span>Login</span></button>
-            <button class="login-e-government-button" type="submit"><span>Login with E-goverment</span></button>
-            <button class="sign-up-button" type="submit"><span>Sign up</span></button>
+            <div class="forgot-password">
+                <p><a href="forgot">Forgot my password</a></p>
+            </div>
+            <div class="login-buttons">            
+                <button class="login-button" type="submit"><span>Login</span></button>
+                <button class="login-e-government-button" type="submit"><span>Login with e-Government</span></button>    
+                <button class="sign-up-button" type="submit"><span><i class="fa-solid fa-user-plus signup-icon"></i>Sign up</span></button>
+            </div>
         </form>
+    </div>
+    <div class="login-footer">
+        <p>For your questions and problems you can contact me by 
+            <b>
+                <a href="mailto:umuttolekk@gmail.com">
+                    <strong>umuttolekk&#64;gmail.com</strong>
+                </a> 
+            </b>
+        </p>
     </div>
     
 </div>
