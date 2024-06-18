@@ -18,15 +18,14 @@
     <div>
         <form class="login-form">
             <div class="input-container">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" id="email" name="email" placeholder="Email">
             </div>
             <div class="input-container">
-                <i class="fa fa-key" aria-hidden="true"></i>
-                <input [type]="showPassword ? 'text' : 'password'" id="password" name="password" placeholder="Password"><br>
-                <i class="fa" [ngClass]="{'fa-eye': showPassword, 'fa-eye-slash': !showPassword}"  aria-hidden="true" (click)="togglePassword()"></i>
+                <i class="fa fa-key icon" aria-hidden="true"></i>
+                <input [type]="showPassword ? 'text' : 'password'" id="password" name="password" placeholder="Password">
+                <i class="fa toggle-eye" [ngClass]="{'fa-eye': showPassword, 'fa-eye-slash': !showPassword}" aria-hidden="true" (click)="togglePassword()"></i>
             </div>
-            
             <button class="login-button" type="submit"><span>Login</span></button>
             <button class="login-e-government-button" type="submit"><span>Login with E-goverment</span></button>
             <button class="sign-up-button" type="submit"><span>Sign up</span></button>

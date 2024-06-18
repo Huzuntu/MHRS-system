@@ -27,33 +27,38 @@
 }
 
 .input-container {
+  display: flex;
   position: relative;
   margin-bottom: 10px;
   width: 100%;
 }
 
-.icon {
+.input-container .icon {
   position: absolute;
   left: 10px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   color: gray;
 }
 
-input[type="password"] {
+.input-container input {
   width: 100%;
-  padding-left: 30px; /* adjust this according to the width of the icon */
-  padding-right: 30px; /* adjust this according to the width of the eye icon */
+  height: 100%;
+  padding-left: 30px; /* Adjust this according to the icon width */
+  padding-right: 30px; /* Adjust this according to the toggle eye icon width */
+  box-sizing: border-box;
 }
 
 .toggle-eye {
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
   color: gray;
 }
+
+
 
 .login-form span {
   color: #f9f9f9;
