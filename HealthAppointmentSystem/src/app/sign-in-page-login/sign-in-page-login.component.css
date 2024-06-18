@@ -1,0 +1,72 @@
+.left-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.navbar-login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.img-columns {
+  padding: 25px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding-left: 30px; /* adjust this according to the width of the icon */
+  padding-right: 30px; /* adjust this according to the width of the eye icon */
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: gray;
+}
+
+.login-form span {
+  color: #f9f9f9;
+}
+
+.login-form .login-button {
+  background-color: #1ab394;
+}
+
+.login-form .login-e-government-button {
+  background-color: #c41212;
+}
+
+.login-form .sign-up-button {
+  background-color: #1890ff;
+}
