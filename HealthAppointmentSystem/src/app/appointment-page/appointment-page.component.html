@@ -1,5 +1,13 @@
 <section class="appointment-page">
-    <app-appointment-page-header></app-appointment-page-header>
-    <app-appointment-page-appointments></app-appointment-page-appointments>
-    <app-appointment-page-nearest-hospitals></app-appointment-page-nearest-hospitals>
+    <header class="appointment-page-header">
+        <app-appointment-page-header></app-appointment-page-header>
+    </header>
+    <main class="appointment-page-main">
+        <div style="padding: 0px;">
+            <div class="appointment-page-main-content">
+                <app-appointment-page-appointments class="appointments-container"></app-appointment-page-appointments>
+                <app-appointment-page-nearest-hospitals class="appointments-hospitals-container"></app-appointment-page-nearest-hospitals>
+            </div>
+        </div>
+    </main>
 </section>

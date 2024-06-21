@@ -11,6 +11,7 @@ import { AppointmentPageComponent } from './appointment-page/appointment-page.co
 import { AppointmentPageHeaderComponent } from './appointment-page-header/appointment-page-header.component';
 import { AppointmentPageAppointmentsComponent } from './appointment-page-appointments/appointment-page-appointments.component';
 import { AppointmentPageNearestHospitalsComponent } from './appointment-page-nearest-hospitals/appointment-page-nearest-hospitals.component';
+import { AppointmentPageFooterComponent } from './appointment-page-footer/appointment-page-footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppointmentPageNearestHospitalsComponent } from './appointment-page-nea
     AppointmentPageComponent,
     AppointmentPageHeaderComponent,
     AppointmentPageAppointmentsComponent,
-    AppointmentPageNearestHospitalsComponent
+    AppointmentPageNearestHospitalsComponent,
+    AppointmentPageFooterComponent
   ],
   imports: [
     BrowserModule,
