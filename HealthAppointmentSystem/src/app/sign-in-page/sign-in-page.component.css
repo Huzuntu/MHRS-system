@@ -1,9 +1,0 @@
-
-.sign-in-container {
-  display: flex;
-  height: 100vh; /* Full viewport height */
-}
-
-.sign-in-container > * {
-  flex: 1; /* Distribute space equally */
-}
