@@ -1,0 +1,161 @@
+$color_1: white;
+$color_2: #e8e8e8;
+$color_3: inherit;
+$background-color_1: #0a0a0a;
+$background-color_2: #444444;
+$background-color_3: #ed626d;
+$background-color_4: #919191;
+$background-color_5: #6ABFBC;
+$background-color_6: #358481;
+$background-color_7: #A7161A;
+$border-color_1: #e48d96;
+$border-color_2: #919191;
+$border-color_3: #6ABFBC;
+
+.appointment-container {
+	display: flex;
+	flex-direction: row;
+	background-color: $background-color_1;
+	box-sizing: border-box;
+	border-radius: 12px;
+	padding: 16px;
+	padding-bottom: 0;
+	margin-bottom: 16px;
+}
+.appointment-cards {
+	flex: 1;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	color: $color_1;
+}
+.vaccination-card {
+	background-color: $background-color_2 !important;
+}
+#hos-card {
+	&:hover {
+		color: $color_2 !important;
+		border-color: $border-color_1 !important;
+		background-color: $background-color_3 !important;
+	}
+}
+#vac-card {
+	&:hover {
+		color: $color_2 !important;
+		border-color: $border-color_2 !important;
+		background-color: $background-color_4 !important;
+	}
+}
+#doc-card {
+	&:hover {
+		color: $color_2 !important;
+		border-color: $border-color_3 !important;
+		background-color: $background-color_5 !important;
+	}
+}
+.appointment-card {
+	cursor: pointer;
+	height: 120px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid #707070;
+	box-shadow: 0 0 4px #7b7b7b !important;
+	transition-duration: 0.3s;
+	&:hover {
+		background: #6ABFBC !important;
+		background: #919191 !important;
+	}
+}
+.ant-card {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-variant: tabular-nums;
+	line-height: 1.5;
+	list-style: none;
+	font-feature-settings: 'tnum';
+	position: relative;
+	background: #fff;
+	transition: all 0.3s;
+}
+.card-headings {
+	width: calc(100% - 35px);
+	box-sizing: border-box;
+	padding-left: 10px;
+	.hospital-heading {
+		margin: 0 !important;
+	}
+	h3 {
+		font-size: 1rem !important;
+		margin-bottom: 0px;
+		color: $color_1;
+		height: 50%;
+		margin: 0;
+	}
+	h5 {
+		font-size: 0.8rem !important;
+		color: $color_1;
+		opacity: 0.7 !important;
+		font-weight: 400;
+		margin: 0px;
+	}
+}
+.mb-16 {
+	margin-bottom: 16px;
+}
+.mr-16 {
+	margin-right: 16px;
+}
+.card-body {
+	padding: 10px;
+	flex-direction: row;
+}
+.hospital-h3 {
+	height: 40% !important;
+}
+.card-group-content {
+	display: inline-flex;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.card-icon {
+	width: 65px;
+	box-sizing: border-box;
+}
+.card-icon-logo {
+	color: $color_3;
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+}
+.family-doctor-appointment {
+	background-color: $background-color_6 !important;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.hospital-appointment {
+	background-color: $background-color_7 !important;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.appointments-side {
+	flex: 2;
+	box-sizing: border-box;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.show-all-button {
+	place-self: center;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	width: 95%;
+	background-color: #707070;
+	border-color: #707070;
+}

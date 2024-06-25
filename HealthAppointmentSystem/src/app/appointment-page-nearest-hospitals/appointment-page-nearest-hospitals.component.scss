@@ -1,0 +1,50 @@
+.appointment-page-hospitals {
+	display: flex;
+	flex-direction: column;
+	background-color: inherit;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	border-radius: 12px;
+}
+.appointment-page-hospitals .tab-cards {
+	background-color: black !important;
+	background: black !important;
+}
+
+.appointment-page-hospitals ::ng-deep .ant-tabs-nav {
+	background-color: #383838;
+}
+
+.appointment-page-hospitals ::ng-deep .ant-tabs-tab {
+	color: #989898 !important;
+	background-color: #272727;
+	box-sizing: border-box !important;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+}
+
+.appointment-page-hospitals ::ng-deep {
+	.ant-tabs-tab-active {
+		background-color: black !important; 
+		border-bottom-color: black !important;
+		.ant-tabs-tab-btn {
+			color: white !important;
+		}
+	}
+}
+
+.appointment-page-hospitals ::ng-deep .ant-tabs-bottom > .ant-tabs-nav,
+.appointment-page-hospitals ::ng-deep .ant-tabs-bottom > div > .ant-tabs-nav,
+.appointment-page-hospitals ::ng-deep .ant-tabs-top > .ant-tabs-nav,
+.appointment-page-hospitals ::ng-deep .ant-tabs-top > div > .ant-tabs-nav {
+  margin: 0 !important;
+}
+
+.appointment-page-hospitals::ng-deep .ant-tabs-bar {
+    background-color: black; /* Change this to the color you want */
+}
+
+.appointment-page-hospitals ::ng-deep .ant-tabs-nav-wrap {
+	border-color: black;
+    
+}
