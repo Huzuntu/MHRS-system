@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FavIconServiceService } from './fav-icon-service.service';
 
 @Component({
   selector: 'app-root',

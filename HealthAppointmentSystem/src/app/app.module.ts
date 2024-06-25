@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { DropdownModule } from 'primeng/dropdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,17 @@ import { AppointmentPageAppointmentsComponent } from './appointment-page-appoint
 import { AppointmentPageNearestHospitalsComponent } from './appointment-page-nearest-hospitals/appointment-page-nearest-hospitals.component';
 import { AppointmentPageFooterComponent } from './appointment-page-footer/appointment-page-footer.component';
 
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideHttpClient } from '@angular/common/http';
+import { CurrentAppointmentsComponent } from './current-appointments/current-appointments.component';
+import { PreviousAppointmentsComponent } from './previous-appointments/previous-appointments.component';
+
+
+
+registerLocaleData(en);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,15 +35,20 @@ import { AppointmentPageFooterComponent } from './appointment-page-footer/appoin
     AppointmentPageHeaderComponent,
     AppointmentPageAppointmentsComponent,
     AppointmentPageNearestHospitalsComponent,
-    AppointmentPageFooterComponent
+    AppointmentPageFooterComponent,
+    CurrentAppointmentsComponent,
+    PreviousAppointmentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    DropdownModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync(),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })

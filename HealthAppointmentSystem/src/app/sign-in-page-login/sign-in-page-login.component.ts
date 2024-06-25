@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DropdownModule } from 'primeng/dropdown';
 
 @Component({
   selector: 'app-sign-in-page-login',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class SignInPageLoginComponent {
   public showPassword: boolean = false;
+
 
   constructor(private router: Router) {}
 
