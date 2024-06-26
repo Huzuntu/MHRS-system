@@ -26,6 +26,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NzTabsModule } from 'ng-zorro-antd/tabs'; 
 import { NzButtonComponent } from 'ng-zorro-antd/button';
 import { NearestHospitalsComponent } from './nearest-hospitals/nearest-hospitals.component';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
 registerLocaleData(en);
 
 @NgModule({
@@ -51,7 +54,9 @@ registerLocaleData(en);
     FormsModule,
     FontAwesomeModule,
     NzTabsModule,
-    NzButtonComponent
+    NzButtonComponent,
+    NzDropDownModule,
+    NzIconModule
   ],
   providers: [
     provideClientHydration(),

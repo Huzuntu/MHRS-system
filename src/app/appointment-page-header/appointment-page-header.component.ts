@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faUsers, faGear, faSearch, faUser, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faGear, faSearch, faUser, faChevronDown, faStar, faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-appointment-page-header',
@@ -12,4 +13,6 @@ export class AppointmentPageHeaderComponent {
   faSearch = faSearch;
   faUser = faUser;
   faChevronDown = faChevronDown;
+  faStar = faStar;
+  faCalendarCheck = faCalendarCheck;
 }
