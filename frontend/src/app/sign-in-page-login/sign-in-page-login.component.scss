@@ -1,0 +1,102 @@
+$color_1: gray;
+$color_2: #f9f9f9;
+$background-color_1: #1ab394;
+$background-color_2: #c41212;
+$background-color_3: #1890ff;
+
+.login-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.login-header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.img-columns {
+	padding: 25px;
+}
+.login-form {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	.forgot-password {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	span {
+		color: $color_2;
+	}
+	.login-button {
+		background-color: $background-color_1;
+		margin-bottom: 8px;
+		border-radius: 8px;
+		border: 0px;
+	}
+	.login-e-government-button {
+		background-color: $background-color_2;
+		margin-bottom: 8px;
+		border-radius: 8px;
+		border: 0px;
+	}
+	.sign-up-button {
+		background-color: $background-color_3;
+		margin-bottom: 8px;
+		border-radius: 8px;
+		border: 0px;
+	}
+}
+.input-container {
+	display: flex;
+	position: relative;
+	width: 100%;
+	.icon {
+		position: absolute;
+		left: 10px;
+		top: 40%;
+		transform: translateY(-50%);
+		color: $color_1;
+	}
+	input {
+		width: 100%;
+		height: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+		box-sizing: border-box;
+	}
+}
+.toggle-eye {
+	position: absolute;
+	right: 10px;
+	top: 37%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: $color_1;
+}
+.login-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.signup-icon {
+	position: static;
+	margin-right: 5px;
+}
+.login-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.language {
+	display: flex;
+	box-sizing: border-box;
+}
