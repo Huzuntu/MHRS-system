@@ -1,27 +1,68 @@
-# MhrsUmut
+# MhrsUmut 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4. 
+The pages are almost the same as the current MHRS system, but I made them from scratch.
+It is only front-end as of now, but I will update the functionalities as I go along.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The MHRS-system is designed to streamline the process of scheduling and managing medical appointments. It offers features such as user registration, appointment booking, and a user-friendly interface for both patients and medical staff.
 
-## Code scaffolding
+## Table of Contents
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Installation](#installation-and-usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Build
+## Installation and Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To get started with MHRS-system, follow these steps:
 
-## Running unit tests
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Huzuntu/MHRS-system.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd MHRS-system
+    ```
+3. Install the necessary dependencies:
+    ```sh
+    npm install
+    ```
+4. To run and see the project:
+    ```sh
+    ng serve
+    ```
+    Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Login Page
+![Login Page](/login-page.png?raw=true "Login Page")
 
-## Further help
+### Appointments Page
+![Appointments Page](/appointments-page.png?raw=true "Appointments Page")
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contributing
+
+I welcome any and all contributions! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## Contact
+
+For any inquiries, please contact [Huzuntu](https://github.com/Huzuntu).
+
