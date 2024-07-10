@@ -1,4 +1,4 @@
-package com.mhrssystem.mhrs.doctor;
+package com.mhrssystem.mhrs.hospital;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,65 +18,58 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/api/doctors")
-public class DoctorController 
+@RequestMapping("/api/hospitals")
+public class HospitalController 
 {
-    DoctorService doctorService;
+    private HospitalService hospitalService;
 
-    public DoctorController(DoctorService doctorService) 
+    public HospitalController(HospitalService hospitalService) 
     {
-        this.doctorService = doctorService;
+        this.hospitalService = hospitalService;
     }
 
     @GetMapping
-    List<Doctor> findAll()
+    public List<Hospital> findAll()
     {
-        return doctorService.findAll();
+        return hospitalService.findAll();
     }
 
     @GetMapping("/{id}")
-    Doctor findById(@PathVariable Long id)
+    Hospital findById(@PathVariable Long id)
     {
-        Optional<Doctor> doctor = doctorService.findById(id);
-        if(doctor.isEmpty())
+        Optional<Hospital> hospital = hospitalService.findById(id);
+        if(hospital.isEmpty())
         {
-            throw new DoctorNotFoundException();
+            throw new HospitalNotFoundException();
         }
-        return doctor.get();
+        return hospital.get();
     }
-
-    // @GetMapping("/search/{name}")
-    // Doctor findByName(@PathVariable String name)
-    // {
-    //     Doctor doctor = doctorService.findByName(name);
-    //     return doctor;
-
-    // }
 
     @GetMapping("/search")
-    public List<Doctor> findByName(@RequestParam String name) {
-        return doctorService.findByNameContaining(name);
+    public List<Hospital> findByName(@RequestParam String name)
+    {
+        return hospitalService.findByNameContainingHospitals(name);
     }
-
+    
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("")
-    void create(@Valid @RequestBody Doctor doctor)
+    void create(@Valid @RequestBody Hospital hospital)
     {
-        doctorService.save(doctor);
+        hospitalService.save(hospital);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping("/{id}")
-    void update(@Valid @RequestBody Doctor doctor, @PathVariable Long id)
+    void update(@Valid @RequestBody Hospital hospital, @PathVariable Long id)
     {
-        doctorService.save(doctor);
+        hospitalService.save(hospital);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
     void delete(@PathVariable Long id)
     {
-        doctorService.deleteById(id);
+        hospitalService.deleteById(id);
     }
 
 
@@ -84,8 +77,6 @@ public class DoctorController
     @DeleteMapping("")
     void deleteAll()
     {
-        doctorService.deleteAll();
+        hospitalService.deleteAll();
     }
-
-
 }

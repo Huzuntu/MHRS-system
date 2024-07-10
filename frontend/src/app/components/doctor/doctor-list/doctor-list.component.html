@@ -1,0 +1,9 @@
+<div>
+  <input type="text" [(ngModel)]="searchQuery" placeholder="Search doctors">
+  <button (click)="searchDoctors()">Search</button>
+</div>
+<ul>
+  <li *ngFor="let doctor of doctors">
+      {{ doctor.name }} - {{ doctor.specialty }}
+  </li>
+</ul>   

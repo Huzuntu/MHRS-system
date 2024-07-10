@@ -6,9 +6,23 @@
         </div>
         
         <div class="appointment-header-search">
-            <button class="appointment-search-button"><fa-icon [icon] = "faSearch"></fa-icon></button>
-            <input class="appointment-search" placeholder="Please enter down the hospital, clinic or family doctor information you are looking for an appointment...">
+          <input class="appointment-search" [(ngModel)]="searchQuery" placeholder="Please enter the hospital, clinic, or family doctor information you are looking for an appointment...">
+          <button class="appointment-search-button" (click)="onSearch()"><fa-icon [icon]="faSearch"></fa-icon></button>
+          <!-- Display search results -->
+          <div *ngIf="searchResults.length > 0" class="search-results">
+            <ul>
+              <li *ngFor="let result of searchResults">
+                {{ result.name }} - {{ result.specialty }}
+              </li>
+            </ul>
+          </div>
         </div>
+        
+
+
+
+    
+        
 
         <div class="appointment-header-buttons">
             <button class="users-icon"><fa-icon [icon] = "faUsers" class="users-icons"></fa-icon></button>

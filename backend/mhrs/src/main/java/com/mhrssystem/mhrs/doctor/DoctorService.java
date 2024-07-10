@@ -7,7 +7,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class DoctorService {
+
     private DoctorRepository doctorRepository;
+
+    
+    public DoctorService(DoctorRepository doctorRepository) {
+        this.doctorRepository = doctorRepository;
+    }
 
     public List<Doctor> findAll()
     {
@@ -17,6 +23,16 @@ public class DoctorService {
     public Optional<Doctor> findById(Long id)
     {
         return doctorRepository.findById(id);
+    }
+
+    // public Doctor findByName(String name)
+    // {
+    //     return doctorRepository.findByName(name);
+    // }
+
+    public List<Doctor> findByNameContaining(String name) 
+    {
+        return doctorRepository.findByNameContaining(name);
     }
 
     public void save(Doctor doctor) 

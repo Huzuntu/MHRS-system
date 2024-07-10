@@ -120,3 +120,34 @@ $background-color_4: #46b0ac;
 	display: flex;
 	flex:1;
 }
+
+.search-results {
+	position: absolute;
+	top: 100%; /* Position directly below the search bar */
+	left: 0;
+	width: 100%; /* Match the width of the search bar */
+	background-color: white;
+	border: 1px solid #ccc;
+	border-top: none; /* Remove the top border to visually connect with the search bar */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000; /* Ensure it appears above other elements */
+  
+	ul {
+	  list-style-type: none;
+	  padding: 0;
+	  margin: 0;
+  
+	  li {
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+  
+		&:last-child {
+		  border-bottom: none;
+		}
+  
+		&:hover {
+		  background-color: #f0f0f0;
+		}
+	  }
+	}
+  }
