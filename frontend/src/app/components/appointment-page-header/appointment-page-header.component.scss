@@ -129,6 +129,7 @@ $background-color_4: #46b0ac;
 	background-color: white;
 	border: 1px solid #ccc;
 	border-top: none; /* Remove the top border to visually connect with the search bar */
+	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	z-index: 1000; /* Ensure it appears above other elements */
   
@@ -140,6 +141,7 @@ $background-color_4: #46b0ac;
 	  li {
 		padding: 10px;
 		border-bottom: 1px solid #ccc;
+		border-radius: 8px;
   
 		&:last-child {
 		  border-bottom: none;

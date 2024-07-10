@@ -5,7 +5,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name="hospitals")
@@ -15,16 +14,25 @@ public class Hospital
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name is mandatory")
-    private String name;
+    // @NotBlank(message = "Name is mandatory")
+    // private String name;
 
-    @NotBlank(message = "Location is mandatory")
+    // @NotBlank(message = "Location is mandatory")
+    // private String location;
+
+    private String name;
     private String location;
 
     public Hospital() {}
 
-    public Hospital(Long id, @NotBlank(message = "Name is mandatory") String name,
-            @NotBlank(message = "Location is mandatory") String location) {
+    // public Hospital(Long id, @NotBlank(message = "Name is mandatory") String name,
+    //         @NotBlank(message = "Location is mandatory") String location) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.location = location;
+    // }
+
+    public Hospital(Long id, String name, String location) {
         this.id = id;
         this.name = name;
         this.location = location;

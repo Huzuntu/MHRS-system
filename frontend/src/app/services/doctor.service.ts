@@ -20,6 +20,7 @@ export class DoctorService {
   {
     const searchUrl = `${this.apiUrl}/search?name=${query}`;
     console.log(searchUrl); // Log the constructed API URL
+    console.log(this.http.get<Doctor[]>(searchUrl));
     return this.http.get<Doctor[]>(searchUrl);
   }
 }

@@ -4,7 +4,7 @@ export interface Doctor
     id: number;
     name: string;
     email: string;
-    specialty: string;
+    speciality: string;
     password: string;
     phone: string;
     hospital: string;

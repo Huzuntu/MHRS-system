@@ -32,6 +32,7 @@ export class AppointmentPageHeaderComponent {
       this.doctorService.searchDoctors(this.searchQuery).subscribe(doctors => {
         console.log('Doctors found:', doctors);
         this.searchResults = doctors;
+        console.log(this.searchResults);
       });
     } else {
       console.log('Search query is empty');

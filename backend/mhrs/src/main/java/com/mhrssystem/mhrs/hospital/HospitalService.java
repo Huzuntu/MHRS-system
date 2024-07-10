@@ -27,7 +27,7 @@ public class HospitalService
     
     public List<Hospital> findByNameContainingHospitals(String name)
     {
-        return hospitalRepository.findByNameContainingHospitals(name);
+        return hospitalRepository.findByNameContaining(name);
     }
 
     public void save(Hospital hospital)

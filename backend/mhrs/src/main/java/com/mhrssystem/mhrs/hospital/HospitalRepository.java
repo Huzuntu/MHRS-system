@@ -6,5 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface HospitalRepository extends JpaRepository<Hospital, Long>
 {
-    List<Hospital> findByNameContainingHospitals(String name);
+    List<Hospital> findByNameContaining(String name);
+
 }

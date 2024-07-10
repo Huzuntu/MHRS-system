@@ -48,7 +48,7 @@ public class HospitalController
     @GetMapping("/search")
     public List<Hospital> findByName(@RequestParam String name)
     {
-        return hospitalService.findByNameContainingHospitals(name);
+        return hospitalService.findByNameContaining(name);
     }
     
     @ResponseStatus(HttpStatus.CREATED)
