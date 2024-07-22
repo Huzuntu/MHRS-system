@@ -15,29 +15,8 @@
         </div>
 
     </div>
-
-    <div class="login-form">
-        <form>
-            <div class="input-container">
-                <fa-icon [icon]="faUser" class="icon"></fa-icon>
-                <input type="text" id="email" name="email" placeholder="Email">
-            </div>
-            <div class="input-container">
-                <fa-icon [icon]="faKey" class="icon"></fa-icon>
-                <i class="fa fa-key icon" aria-hidden="true"></i>
-                <input [type]="showPassword ? 'text' : 'password'" id="password" name="password" placeholder="Password">
-                <fa-icon [icon]="showPassword ? faEye : faEyeSlash" class="toggle-eye" (click)="togglePassword()"></fa-icon>
-            </div>
-            <div class="forgot-password">
-                <p><a href="forgot">Forgot my password</a></p>
-            </div>
-            <div class="login-buttons">            
-                <button class="login-button" type="submit" (click)="routeToAppointmentPage();"><span>Login</span></button>
-                <button class="login-e-government-button" type="submit"><span>Login with e-Government</span></button>    
-                <button class="sign-up-button" type="submit"><span><i class="fa-solid fa-user-plus signup-icon"></i>Sign up</span></button>
-            </div>
-        </form>
-    </div>
+    
+    <app-sign-in-page-login-form class="login-form"></app-sign-in-page-login-form>
     <div class="login-footer">
         <p>For your questions and problems you can contact me by 
             <b>

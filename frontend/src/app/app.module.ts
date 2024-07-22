@@ -29,6 +29,14 @@ import { NearestHospitalsComponent } from '../app/components/nearest-hospitals/n
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { DoctorListComponent } from '../app/components/doctor/doctor-list/doctor-list.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from '../environments/environment.prod';
+import { SignInPageLoginFormComponent } from './sign-in-page-login-form/sign-in-page-login-form.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 registerLocaleData(en);
 
@@ -48,6 +56,8 @@ registerLocaleData(en);
     AppointmentsListComponent,
     NearestHospitalsComponent,
     DoctorListComponent,
+    SignInPageLoginFormComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,12 +69,19 @@ registerLocaleData(en);
     NzButtonComponent,
     NzDropDownModule,
     NzIconModule,
+    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    NzDatePickerModule,
+    NzSpaceModule,
+    NzSelectModule,
+    
   ],
   providers: [
     provideClientHydration(),
     { provide: NZ_I18N, useValue: en_US },
     provideAnimationsAsync(),
-    provideHttpClient(withFetch())
+    provideHttpClient(withFetch()),
+    SignInPageLoginFormComponent
   ],
   bootstrap: [AppComponent]
 })

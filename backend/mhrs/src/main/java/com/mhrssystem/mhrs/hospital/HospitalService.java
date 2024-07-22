@@ -25,7 +25,7 @@ public class HospitalService
         return hospitalRepository.findById(id);
     }
     
-    public List<Hospital> findByNameContainingHospitals(String name)
+    public List<Hospital> findByNameContaining(String name)
     {
         return hospitalRepository.findByNameContaining(name);
     }
